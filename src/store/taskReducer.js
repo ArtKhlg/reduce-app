@@ -11,6 +11,7 @@ export function taskReducer(state, action) {
         ...newArray[elementIndex],
         ...action.payload,
       };
+
       return newArray;
     }
     case taskDeleted: {
